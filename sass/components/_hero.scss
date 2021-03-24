@@ -1,0 +1,39 @@
+.hero {
+  padding: 200px 0;
+  height: 600px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(to right, $bg-hero, $bg-hero),
+    url(../images/img17.jpg);
+}
+
+.hero__title {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+.hero__button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: $primary-bg-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: color 250ms $time-function, background-color 250ms $time-function;
+}
