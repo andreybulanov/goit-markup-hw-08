@@ -93,27 +93,40 @@
 
 .connection__link {
   color: $primary-text-color;
+  text-decoration: none;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
+    &.mail {
+      // display: block;
+      margin-bottom: 10px;
+      padding-top: 21px;
+      // text-decoration: none;
+    }
+
+    &.tel {
+      // display: block;
+      padding-bottom: 21px;
+      // text-decoration: none;
+    }
   }
   @media screen and (min-width: 1200px) {
     padding: 0;
   }
   @media screen and (min-width: 1200px) {
-    &.mail {
+    &mail {
       display: block;
       margin-bottom: 10px;
       padding-top: 21px;
-      text-decoration: none;
+      // text-decoration: none;
     }
 
     &.tel {
       display: block;
       padding-bottom: 21px;
-      text-decoration: none;
+      // text-decoration: none;
     }
   }
 }

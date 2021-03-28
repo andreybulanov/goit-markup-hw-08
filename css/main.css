@@ -191,6 +191,7 @@ p {
 
 .connection__link {
   color: #757575;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .connection__link {
@@ -204,6 +205,13 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
+  .connection__link.mail {
+    margin-bottom: 10px;
+    padding-top: 21px;
+  }
+  .connection__link.tel {
+    padding-bottom: 21px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .connection__link {
@@ -211,16 +219,14 @@ p {
   }
 }
 @media screen and (min-width: 1200px) {
-  .connection__link.mail {
+  .connection__linkmail {
     display: block;
     margin-bottom: 10px;
     padding-top: 21px;
-    text-decoration: none;
   }
   .connection__link.tel {
     display: block;
     padding-bottom: 21px;
-    text-decoration: none;
   }
 }
 
