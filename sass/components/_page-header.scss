@@ -92,12 +92,17 @@
 }
 
 .connection__link {
-  display: flex;
   color: $primary-text-color;
-  @media screen and (max-width: 1199px) {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
     padding: 0;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     &.mail {
       display: block;
       margin-bottom: 10px;
@@ -110,12 +115,6 @@
       padding-bottom: 21px;
       text-decoration: none;
     }
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
